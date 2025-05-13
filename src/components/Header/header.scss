@@ -1,0 +1,13 @@
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 49px;
+
+  @media (min-width: 1280px) {
+    margin-bottom: 85px;
+  }
+
+  &__switch {
+    margin-left: auto;
+  }
+}

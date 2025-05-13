@@ -1,0 +1,52 @@
+.quiz {
+
+  &__wrap {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    @media (min-width: 1280px) {
+      grid-template-columns: 465px 1fr;
+      column-gap: 131px;
+      row-gap: 0;
+    }
+  }
+
+  &__text {
+    color: var(--color-second-text);
+  }
+
+  &__title {
+    font-weight: 500;
+    margin-top: 27px;
+  }
+
+  &__btns {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    order: 3;
+    margin-top: 64px;
+
+    @media (min-width: 1280px) {
+      order: unset;
+      margin-top: 0;
+    }
+  }
+
+  &__message {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: var(--color-error-message);
+    margin-top: 32px;
+  }
+
+  &__submit {
+    order: 4;
+
+    @media (min-width: 1280px) {
+      order: unset;
+    }
+  }
+}

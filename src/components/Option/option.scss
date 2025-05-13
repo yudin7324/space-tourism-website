@@ -1,0 +1,109 @@
+.option {
+
+  &__wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    color: var(--color-text);
+    font-weight: 500;
+    padding: 15px 17px;
+    background-color: var(--color-second-bg);
+    border-radius: 24px;
+    box-shadow: var(--box-shadow);
+    cursor: pointer;
+    border: 3px solid transparent;
+
+    @media (hover: hover) {
+      &:hover {
+        .option__variant {
+          color: var(--color-purple);
+          background-color: #f6e7ff;
+        }
+      }
+    }
+
+    &.correct {
+      border-color: var(--color-green);
+
+      .option__variant {
+        color: var(--color-white);
+        background-color: var(--color-green);
+      }
+    }
+
+    &.incorrect {
+      border-color: var(--color-red);
+
+      .option__variant {
+        color: var(--color-white);
+        background-color: var(--color-red);
+      }
+    }
+  }
+
+  &__input:focus-visible {
+    ~ .option {
+      &__wrap {
+        outline: 2px solid var(--color-outline);
+      }
+    }
+  }
+
+  &__input:checked {
+    ~ .option {
+      &__wrap {
+        border-color: var(--color-purple);
+
+        .option__variant {
+          color: var(--color-white);
+          background-color: var(--color-purple);
+        }
+
+        &.correct {
+          border-color: var(--color-green);
+    
+          .option__variant {
+            color: var(--color-white);
+            background-color: var(--color-green);
+          }
+        }
+    
+        &.incorrect {
+          border-color: var(--color-red);
+    
+          .option__variant {
+            color: var(--color-white);
+            background-color: var(--color-red);
+          }
+        }
+      }
+    }
+  }
+
+  &__input {
+    position: absolute;
+    height: 0;
+    width: 0;
+    opacity: 0;
+  }
+
+  &__variant {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 56px;
+    width: 56px;
+    min-width: 56px;
+    color: var(--color-second-text);
+    font-weight: 700;
+    background-color: var(--color-bg);
+    border-radius: 8px;
+  }
+
+  &__icon {
+    height: 30px;
+    width: 30px;
+    margin-left: auto;
+  }
+}
