@@ -1,15 +1,11 @@
 :root {
   --color-white: #FFFFFF;
-  --color-purple: #A729F5;
-  --color-navy: #3B4D66;
-  --color-dark-navy: #313E51;
-  --color-grey-navy: #626C7F;
-  --color-light-bluish: #ABC1E1;
-  --color-light-grey: #F4F6FA;
-  --color-green: #26D782;
-  --color-red: #EE5454;
-  --color-blue: #306AFF;
-  --color-orange: #FF7E35;
+  --color-blue-900: #0B0D17;
+  --color-blue-300: #D0D6F9;
+
+  --font-1: "Barlow Condensed", sans-serif;
+  --font-2: "Bellefair", serif; 
+  --font-3: "Barlow", sans-serif;
 }
 
 *,
@@ -32,11 +28,12 @@ html {
 }
 
 body {
-  font-family: "Bellefair", serif;
-  font-size: 16px;
+  font-family: var(--font-1);
+  font-size: 18px;
   line-height: 1;
   font-weight: 400;
-  color: var(--color-text);
+  color: var(--color-white);
+  background-color: var(--color-blue-900);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-tap-highlight-color: transparent;
@@ -64,7 +61,7 @@ table {
 input,
 textarea,
 button {
-  font-family: "Bellefair", serif;
+  font-family: var(--font-1);
   border: none;
   outline: none;
   background: none;
@@ -146,33 +143,52 @@ h1, h2, h3, h4, h5, h6, p {
   }
 }
 
-.heading-s {
-  font-size: 28px;
-  line-height: 1;
-}
-
-.heading-m {
-  font-size: 36px;
-  line-height: 1.2;
-}
-
-.heading-l {
-  font-size: 64px;
-  line-height: 1;
-}
-
-.display {
+.text-1 {
+  font-family: var(--font-2);
   font-size: 144px;
   line-height: 1;
 }
 
-.body-s {
-  font-style: italic;
-  font-size: 20px;
-  line-height: 1.5;
+.text-2 {
+  font-family: var(--font-2);
+  font-size: 100px;
 }
 
-.body-m {
-  font-size: 24px;
-  line-height: 150%;
+.text-3 {
+  font-family: var(--font-2);
+  font-size: 56px;
+}
+
+.text-4 {
+  font-family: var(--font-2);
+  font-size: 32px;
+}
+
+.text-5 {
+  font-size: 28px;
+  letter-spacing: 0.14em;
+}
+
+.text-6 {
+  font-family: var(--font-2);
+  font-size: 28px;
+}
+
+.text-7 {
+  font-size: 14px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.text-8 {
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.12em;
+}
+
+.text-9 {
+  font-family: var(--font-3);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.8;
 }
