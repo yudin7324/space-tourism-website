@@ -1,41 +1,46 @@
 .button {
-  overflow: hidden;
-  position: relative;
+  display: flex;
+  justify-content: center;
   width: 100%;
-  color: var(--color-white);
-  padding: 32px;
-  border-radius: 24px;
-  background: var(--color-purple);
-  box-shadow: var(--box-shadow);
-  margin-top: 32px;
+  height: 67px;
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--color-dark-navy);
+  letter-spacing: 0.06em;
+  padding: 17px 25px 25px 25px;
+  background-color: var(--color-light-yellow);
+  border-radius: 15px;
+  box-shadow: inset 0 -8px 0 0 #cc8b13;
+  transition: background-color 0.2s linear;
+  white-space: nowrap;
 
-  span {
-    position: relative;
-    z-index: 2;
-    font-weight: 500;
+  &:hover {
+    background-color: var(--color-light-yellow-hover);
   }
 
-  &:focus-visible {
-    outline: 2px solid var(--color-outline);
+  &.button--secondary {
+    height: 52px;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.06em;
+    padding: 15px 17px 17px 16px;
   }
 
-  &::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: transparent;
-    z-index: 1;
-  }
-
-  @media (hover: hover) {
+  &.button--blue {
+    background-color: var(--color-light-blue);
+    box-shadow: inset 0 -8px 0 0 #118c87;
+  
     &:hover {
+      background-color: var(--color-light-blue-hover);
+    }
+  }
 
-      &::after {
-        background-color: rgba(#FFFFFF, 0.5);;
-      }
+  &.button--silver {
+    background-color: var(--color-silver);
+    box-shadow: inset 0 -4px 0 0 #6b8997;
+
+    &:hover {
+      background-color: var(--color-silver-hover);
     }
   }
 }

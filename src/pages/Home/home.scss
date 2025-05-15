@@ -1,36 +1,27 @@
 .home {
+  height: 100%;
 
   &__wrap {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 64px;
-
-    @media (min-width: 1280px) {
-      grid-template-columns: 456px 1fr;
-      gap: 131px;
-    }
-  }
-
-  &__title {
-    font-weight: 300;
-
-    span {
-      font-weight: 500;
-    }
-  }
-
-  &__text {
-    margin-top: 16px;
-    color: var(--color-second-text);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
 
     @media (min-width: 768px) {
-      margin-top: 48px;
+      gap: 40px;
     }
   }
 
   &__btns {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    width: 100%;
+    gap: 16px;
+
+    @media (min-width: 768px) {
+      gap: 20px;
+    }
   }
 }

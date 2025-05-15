@@ -1,0 +1,19 @@
+:root {
+  --color-white: #FFFFFF;
+  --color-blue-900: #0B0D17;
+  --color-blue-300: #D0D6F9;
+
+  --font-1: "Barlow Condensed", sans-serif;
+  --font-2: "Bellefair", serif; 
+  --font-3: "Barlow", sans-serif;
+}
+
+
+@keyframes fadeIn {
+  from { 
+    opacity: 0; 
+  }
+  to { 
+    opacity: 1; 
+  }
+}
