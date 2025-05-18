@@ -3,7 +3,7 @@
 ![Design preview for the Space tourism website coding challenge](./preview.jpg)
 
 ## Tech Stack
-- React
+- React/TS
 - SASS
 - Vite
 
